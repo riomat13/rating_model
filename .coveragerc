@@ -1,0 +1,18 @@
+[run]
+omit =
+  */.local/
+  */virtualenvs/*
+  */.venv/*
+  */tests/*
+  */settings/*
+  */transformers/*
+
+[report]
+exclude_lines =
+  pragma: no cover
+  def __str__
+  def __repr__
+  if __name__ == .__main__.
+  except Exception as e
+
+ignore_errors = True
